@@ -59,10 +59,6 @@ AWS IAM
 ```text
 aws-IAM-management/
 ├── screenshots/
-│   ├── iam-users-list.png
-│   ├── iam-user-permissions.png
-│   ├── terraform-validation.png
-│   └── terraform-iam-resources.png
 ├── .gitignore
 ├── .terraform.lock.hcl
 ├── main.tf
@@ -151,32 +147,6 @@ terraform apply
 
 Review the execution plan and type `yes` only when you intend to create or modify the listed resources.
 
-## Screenshots
-
-### 1. IAM Users List
-
-Displays the IAM users visible in the AWS Management Console.
-
-![IAM Users List](screenshots/iam-users-list.png)
-
-### 2. IAM User Permissions
-
-Shows an example IAM user and its attached AWS managed policies.
-
-![IAM User Permissions](screenshots/iam-user-permissions.png)
-
-### 3. Terraform Validation
-
-Demonstrates successful validation of the Terraform configuration.
-
-![Terraform Validation](screenshots/terraform-validation.png)
-
-### 4. Terraform IAM Resources
-
-Shows the Terraform configuration for IAM users, login profiles, and policy attachments.
-
-![Terraform IAM Resources](screenshots/terraform-iam-resources.png)
-
 ## Security Best Practices
 
 - Never hardcode AWS access keys, secret keys, or passwords in Terraform files.
@@ -188,7 +158,7 @@ Shows the Terraform configuration for IAM users, login profiles, and policy atta
 - Enable MFA for console users where appropriate.
 - Prefer temporary credentials and role-based access whenever possible.
 - Protect generated IAM login passwords and access keys as secrets.
-- Blur account identifiers and access-key details in screenshots before publishing.
+- Blur account identifiers and access-key details in any publicly shared images.
 
 ## Cleanup
 
@@ -225,7 +195,6 @@ Through this project, I practiced:
 
 **Akash Verma**
 
-GitHub: [@akashvrm0812](https://github.com/akashvrm0812)
 
 ---
 
