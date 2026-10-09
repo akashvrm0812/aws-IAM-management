@@ -62,8 +62,7 @@ aws-IAM-management/
 │   ├── iam-users-list.png
 │   ├── iam-user-permissions.png
 │   ├── terraform-validation.png
-│   ├── terraform-iam-resources.png
-│   └── terraform-project-files.png
+│   └── terraform-iam-resources.png
 ├── .gitignore
 ├── .terraform.lock.hcl
 ├── main.tf
@@ -104,7 +103,7 @@ cd aws-IAM-management
 
 ### 2. Configure AWS Credentials
 
-You can configure a local AWS CLI profile using:
+Configure a local AWS CLI profile:
 
 ```bash
 aws configure
@@ -178,12 +177,6 @@ Shows the Terraform configuration for IAM users, login profiles, and policy atta
 
 ![Terraform IAM Resources](screenshots/terraform-iam-resources.png)
 
-### 5. Project Structure
-
-Shows the local project files used for Terraform-based IAM management.
-
-![Terraform Project Files](screenshots/terraform-project-files.png)
-
 ## Security Best Practices
 
 - Never hardcode AWS access keys, secret keys, or passwords in Terraform files.
@@ -191,7 +184,7 @@ Shows the local project files used for Terraform-based IAM management.
 - Exclude `.terraform/` and `*.tfstate*` using `.gitignore`.
 - Store Terraform state securely because it can contain sensitive information.
 - Follow the principle of least privilege when attaching IAM policies.
-- Avoid broad permissions such as `AmazonEC2FullAccess` unless the use case genuinely requires them.
+- Avoid broad permissions unless the use case genuinely requires them.
 - Enable MFA for console users where appropriate.
 - Prefer temporary credentials and role-based access whenever possible.
 - Protect generated IAM login passwords and access keys as secrets.
