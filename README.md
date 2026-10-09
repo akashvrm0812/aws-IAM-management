@@ -198,4 +198,3 @@ Through this project, I practiced:
 
 ---
 
-*This project is intended for learning and demonstration purposes. Review all IAM permissions and resource changes before applying them to an AWS account.*
